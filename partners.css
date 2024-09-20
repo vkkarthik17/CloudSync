@@ -1,0 +1,79 @@
+/* Our Partners Section with Background Image */
+.partners-section {
+    padding: 60px 0;
+    background-image: url('/Facebook clone/images/coming soon.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: #fff !important; /* Ensure text color is white */
+}
+
+/* Optional: Dark Overlay for better text readability */
+.partners-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.partners-section .container {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+/* Section Header */
+.partners-section .section-header {
+    margin-bottom: 40px;
+}
+
+.partners-section .section-title, 
+.partners-section .section-subtitle {
+    color: #fff !important; /* Force text color to be white */
+}
+
+.partners-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.partners-section .section-subtitle {
+    font-size: 1.2rem;
+}
+
+/* Coming Soon Placeholder */
+.coming-soon {
+    margin: 40px 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    color: #333; /* Dark text inside the box */
+}
+
+.coming-soon p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.coming-soon span {
+    font-weight: bold;
+    color: #624fef;
+    font-size: 1.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coming-soon p {
+        font-size: 1.2rem;
+    }
+
+    .coming-soon span {
+        font-size: 1.5rem;
+    }
+}
